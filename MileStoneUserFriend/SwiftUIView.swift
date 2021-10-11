@@ -14,7 +14,7 @@ struct SwiftUIView: View {
             
         Text("Alina")
             
-        Text("Alina")
+        Text("Avidan")
         }
     }
 }
