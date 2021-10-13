@@ -16,8 +16,10 @@
 		E930188E2712C2D6002BACA4 /* MileStoneUserFriendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930188D2712C2D6002BACA4 /* MileStoneUserFriendTests.swift */; };
 		E93018982712C2D6002BACA4 /* MileStoneUserFriendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93018972712C2D6002BACA4 /* MileStoneUserFriendUITests.swift */; };
 		E930189A2712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93018992712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift */; };
-		E93018A72712C480002BACA4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93018A62712C480002BACA4 /* SwiftUIView.swift */; };
 		E93018AB2712C86B002BACA4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E93018AA2712C86B002BACA4 /* .gitignore */; };
+		E955D3742716C24A005BF23E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3732716C24A005BF23E /* User.swift */; };
+		E955D3762716C269005BF23E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3752716C269005BF23E /* Friend.swift */; };
+		E955D3782716C602005BF23E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3772716C602005BF23E /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +52,10 @@
 		E93018932712C2D6002BACA4 /* MileStoneUserFriendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MileStoneUserFriendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93018972712C2D6002BACA4 /* MileStoneUserFriendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileStoneUserFriendUITests.swift; sourceTree = "<group>"; };
 		E93018992712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileStoneUserFriendUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E93018A62712C480002BACA4 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		E93018AA2712C86B002BACA4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E955D3732716C24A005BF23E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E955D3752716C269005BF23E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E955D3772716C602005BF23E /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,7 @@
 			children = (
 				E93018772712C2D4002BACA4 /* MileStoneUserFriendApp.swift */,
 				E93018792712C2D4002BACA4 /* ContentView.swift */,
-				E93018A62712C480002BACA4 /* SwiftUIView.swift */,
+				E955D3722716C227005BF23E /* Models */,
 				E930187B2712C2D6002BACA4 /* Assets.xcassets */,
 				E93018802712C2D6002BACA4 /* Persistence.swift */,
 				E93018822712C2D6002BACA4 /* MileStoneUserFriend.xcdatamodeld */,
@@ -137,6 +141,16 @@
 				E93018992712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift */,
 			);
 			path = MileStoneUserFriendUITests;
+			sourceTree = "<group>";
+		};
+		E955D3722716C227005BF23E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E955D3732716C24A005BF23E /* User.swift */,
+				E955D3752716C269005BF23E /* Friend.swift */,
+				E955D3772716C602005BF23E /* Tag.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +286,11 @@
 			files = (
 				E93018812712C2D6002BACA4 /* Persistence.swift in Sources */,
 				E930187A2712C2D4002BACA4 /* ContentView.swift in Sources */,
+				E955D3742716C24A005BF23E /* User.swift in Sources */,
+				E955D3782716C602005BF23E /* Tag.swift in Sources */,
+				E955D3762716C269005BF23E /* Friend.swift in Sources */,
 				E93018842712C2D6002BACA4 /* MileStoneUserFriend.xcdatamodeld in Sources */,
 				E93018782712C2D4002BACA4 /* MileStoneUserFriendApp.swift in Sources */,
-				E93018A72712C480002BACA4 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
