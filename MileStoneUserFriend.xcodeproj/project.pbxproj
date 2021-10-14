@@ -18,8 +18,12 @@
 		E930189A2712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93018992712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift */; };
 		E93018AB2712C86B002BACA4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E93018AA2712C86B002BACA4 /* .gitignore */; };
 		E955D3742716C24A005BF23E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3732716C24A005BF23E /* User.swift */; };
-		E955D3762716C269005BF23E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3752716C269005BF23E /* Friend.swift */; };
 		E955D3782716C602005BF23E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3772716C602005BF23E /* Tag.swift */; };
+		E955D38027172296005BF23E /* Friends+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D37C27172296005BF23E /* Friends+CoreDataClass.swift */; };
+		E955D38127172296005BF23E /* Friends+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D37D27172296005BF23E /* Friends+CoreDataProperties.swift */; };
+		E955D38227172296005BF23E /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D37E27172296005BF23E /* Users+CoreDataClass.swift */; };
+		E955D38327172296005BF23E /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D37F27172296005BF23E /* Users+CoreDataProperties.swift */; };
+		E955D386271736E2005BF23E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D385271736E2005BF23E /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +58,12 @@
 		E93018992712C2D6002BACA4 /* MileStoneUserFriendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileStoneUserFriendUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E93018AA2712C86B002BACA4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E955D3732716C24A005BF23E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E955D3752716C269005BF23E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		E955D3772716C602005BF23E /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		E955D37C27172296005BF23E /* Friends+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friends+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E955D37D27172296005BF23E /* Friends+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friends+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E955D37E27172296005BF23E /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E955D37F27172296005BF23E /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E955D385271736E2005BF23E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		E93018762712C2D4002BACA4 /* MileStoneUserFriend */ = {
 			isa = PBXGroup;
 			children = (
+				E955D3842717257B005BF23E /* CORE */,
 				E93018772712C2D4002BACA4 /* MileStoneUserFriendApp.swift */,
 				E93018792712C2D4002BACA4 /* ContentView.swift */,
 				E955D3722716C227005BF23E /* Models */,
@@ -114,6 +123,7 @@
 				E93018822712C2D6002BACA4 /* MileStoneUserFriend.xcdatamodeld */,
 				E930187D2712C2D6002BACA4 /* Preview Content */,
 				E93018AA2712C86B002BACA4 /* .gitignore */,
+				E955D385271736E2005BF23E /* DetailView.swift */,
 			);
 			path = MileStoneUserFriend;
 			sourceTree = "<group>";
@@ -147,10 +157,20 @@
 			isa = PBXGroup;
 			children = (
 				E955D3732716C24A005BF23E /* User.swift */,
-				E955D3752716C269005BF23E /* Friend.swift */,
 				E955D3772716C602005BF23E /* Tag.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E955D3842717257B005BF23E /* CORE */ = {
+			isa = PBXGroup;
+			children = (
+				E955D37C27172296005BF23E /* Friends+CoreDataClass.swift */,
+				E955D37D27172296005BF23E /* Friends+CoreDataProperties.swift */,
+				E955D37E27172296005BF23E /* Users+CoreDataClass.swift */,
+				E955D37F27172296005BF23E /* Users+CoreDataProperties.swift */,
+			);
+			path = CORE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,12 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E955D38127172296005BF23E /* Friends+CoreDataProperties.swift in Sources */,
+				E955D386271736E2005BF23E /* DetailView.swift in Sources */,
 				E93018812712C2D6002BACA4 /* Persistence.swift in Sources */,
 				E930187A2712C2D4002BACA4 /* ContentView.swift in Sources */,
 				E955D3742716C24A005BF23E /* User.swift in Sources */,
+				E955D38327172296005BF23E /* Users+CoreDataProperties.swift in Sources */,
 				E955D3782716C602005BF23E /* Tag.swift in Sources */,
-				E955D3762716C269005BF23E /* Friend.swift in Sources */,
+				E955D38027172296005BF23E /* Friends+CoreDataClass.swift in Sources */,
 				E93018842712C2D6002BACA4 /* MileStoneUserFriend.xcdatamodeld in Sources */,
+				E955D38227172296005BF23E /* Users+CoreDataClass.swift in Sources */,
 				E93018782712C2D4002BACA4 /* MileStoneUserFriendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

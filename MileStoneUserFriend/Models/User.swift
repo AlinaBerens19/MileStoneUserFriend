@@ -8,8 +8,7 @@
 import Foundation
 
 
-
-struct User {
+struct User: Codable {
     
     var id: String
     var isActive: Bool
@@ -21,7 +20,14 @@ struct User {
     var about: String
     var registered: Date
     var tags: [String]
-    var friends: [Friend]
+    let friends: [Friend]
     
+
+}
+
+struct Friend: Codable {
+    
+    var id: String
+    var name: String
     
 }
