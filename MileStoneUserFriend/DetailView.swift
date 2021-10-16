@@ -18,6 +18,7 @@ struct DetailView: View {
     var address: String = ""
     var isActive: Bool = false
     var id: String = ""
+    var friends: [Friend]
     
     var body: some View {
         ZStack {
@@ -32,15 +33,26 @@ struct DetailView: View {
                 Text("User company: \(company)")
                 Text("User registered: \(registered)")
                 Text("About user: \(about)")
+                Text(userFriends())
                 }.font(.body)
                 }
             }
         }
     }
-}
-
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
+    
+    func userFriends() -> String {
+        var user_friend: String = "User friends: "
+        
+        for friend in friends {
+           user_friend += " \(friend.name),"
+        }
+        
+        return user_friend
     }
 }
+
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView()
+//    }
+//}

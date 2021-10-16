@@ -24,6 +24,7 @@
 		E955D38227172296005BF23E /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D37E27172296005BF23E /* Users+CoreDataClass.swift */; };
 		E955D38327172296005BF23E /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D37F27172296005BF23E /* Users+CoreDataProperties.swift */; };
 		E955D386271736E2005BF23E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D385271736E2005BF23E /* DetailView.swift */; };
+		E955D3C5271AE114005BF23E /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955D3C4271AE114005BF23E /* FriendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		E955D37E27172296005BF23E /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E955D37F27172296005BF23E /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E955D385271736E2005BF23E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E955D3C4271AE114005BF23E /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				E930187D2712C2D6002BACA4 /* Preview Content */,
 				E93018AA2712C86B002BACA4 /* .gitignore */,
 				E955D385271736E2005BF23E /* DetailView.swift */,
+				E955D3C4271AE114005BF23E /* FriendView.swift */,
 			);
 			path = MileStoneUserFriend;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				E955D38027172296005BF23E /* Friends+CoreDataClass.swift in Sources */,
 				E93018842712C2D6002BACA4 /* MileStoneUserFriend.xcdatamodeld in Sources */,
 				E955D38227172296005BF23E /* Users+CoreDataClass.swift in Sources */,
+				E955D3C5271AE114005BF23E /* FriendView.swift in Sources */,
 				E93018782712C2D4002BACA4 /* MileStoneUserFriendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
